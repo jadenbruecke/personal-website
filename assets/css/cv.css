@@ -26,18 +26,18 @@
 }
 
 @media (min-width: 720px) {
-    .sectionTitle {
-        border-color: #F86F03;
-    }
-}
-
-@media (min-width: 960px) {
     .itemLabel {
         text-align: right;
     }
     .itemContent {
         text-align: left;
     }
+    .sectionTitle {
+        border-color: #F86F03;
+    }
+}
+
+@media (min-width: 960px) {
     .sectionTitle {
         border-color: #54B435;
     }
