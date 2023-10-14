@@ -1,0 +1,150 @@
+/* generic */
+body {
+  font-family: "Helvetica Neue", "Open Sans", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: hsla(171, 15%, 35%, 1);
+  background-color: hsla(36, 31%, 90%, 1);
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, hsla(159, 42%, 88%, 1), hsla(36, 31%, 90%, 1), hsla(227, 65%, 87%, 1));
+  background-size: 180% 180%;
+  animation: gradient-animation 16s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar-brand {
+  color: hsla(171, 15%, 35%, 1);
+}
+
+nav {
+  margin: 20px auto 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  position: relative;
+  border-radius: 50px;
+}
+
+/* specific */
+main {
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: hsla(171, 15%, 35%, 1);
+}
+
+nav a {
+  width: 120px;
+  padding: 1rem 2rem;
+}
+
+.elsewheres li {
+  padding: 10px 0;
+}
+
+#nav01 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: hsla(36, 31%, 90%, 1);
+  border-radius: 50px;
+}
+
+#nav01 li :hover{
+  background-color: aliceblue;
+  border-radius: 50px;
+}
+
+h1 {
+  font-family: 'Gabarito', sans-serif;
+  font-size: 8vw;
+}
+
+.subtitle-holder {
+  font-size: 1rem;
+}
+
+.nav-item {
+  margin: 15px 0 0;
+  justify-content: right;
+  text-align: right;
+}
+
+.ext-item {
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  margin: 1rem 0;
+  border-radius: 30px;
+  height: 60vw;
+  overflow: hidden;
+}
+
+.card img {
+  position: relative;
+  opacity: 1;
+  border-radius: 30px;
+  height: 60vw;
+}
+
+.info {
+  margin: 20px;
+}
+
+.card-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+/* style targeting smaller screens */
+@media (min-width: 768px) {
+  main {
+    padding-top: 10rem;
+  }
+  .elsewheres * {
+    justify-content: left;
+    text-align: left;    
+  }
+  .subtitle-holder p {
+    font-size: 1.5rem;
+  }
+  .card {
+    height: 35vw;
+  }
+  .card img {
+    height: 35vw;
+  }
+
+}

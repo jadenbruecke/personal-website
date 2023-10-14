@@ -1,0 +1,42 @@
+.testimonial-image {
+    width: 83%;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+
+.carousel-item div {
+    margin: 1rem 0;
+}
+
+.square-container {
+    /* width: 32vw; */
+    /* height: 32vw; */
+    overflow: hidden;
+    position: relative;
+}
+
+.square-container img {
+    border-radius: 10px;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.featurette-divider {
+    margin: 3rem 0;
+}
+
+.featurette {
+    justify-content: left;
+    text-align: left;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
