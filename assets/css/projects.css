@@ -32,11 +32,18 @@
     margin: 3rem 0;
 }
 
-.featurette {
-    justify-content: left;
-    text-align: left;
-}
+
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     filter: invert(1);
 }
+
+
+/* style targeting smaller screens */
+@media (min-width: 768px) {
+    .featurette {
+        justify-content: left;
+        text-align: left;
+    }
+}
+  

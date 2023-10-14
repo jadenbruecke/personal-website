@@ -9,6 +9,11 @@
     border-color: #525FE1;
 }
 
+.itemContent li {
+    list-style: inside;
+    display: list-item;
+}
+
 #photo {
     height: auto;
     width: 100%;
@@ -29,6 +34,9 @@
 @media (min-width: 960px) {
     .itemLabel {
         text-align: right;
+    }
+    .itemContent {
+        text-align: left;
     }
     .sectionTitle {
         border-color: #54B435;
