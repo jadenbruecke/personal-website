@@ -5,15 +5,21 @@ document.addEventListener("DOMContentLoaded", function() {
     // Attach fade-out transition to all links
     document.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
+            if (link.className == 'internal') {
 
-            // Fade out the current page
-            document.body.classList.remove('fade-in');
+                e.preventDefault();
 
-            // Wait for the fade-out animation to complete
-            setTimeout(() => {
-                window.location.href = link.href;
-            }, 500); // same duration as the CSS transition
+                // Fade out the current page
+                document.body.classList.remove('fade-in');
+
+                // Wait for the fade-out animation to complete
+
+                // open link within current page
+                setTimeout(() => {
+                    window.location.href = link.href;
+                }, 500);              
+            }
+
         });
     });
 });
