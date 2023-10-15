@@ -25,19 +25,24 @@
     word-wrap: break-word;
 }
 
-@media (min-width: 720px) {
+.itemLabel {
+    text-align: left;
+}
+
+.itemContent {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
     .itemLabel {
         text-align: right;
-    }
-    .itemContent {
-        text-align: left;
     }
     .sectionTitle {
         border-color: #F86F03;
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 992px) {
     .sectionTitle {
         border-color: #54B435;
     }
